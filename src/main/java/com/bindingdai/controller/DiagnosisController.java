@@ -19,6 +19,7 @@ public class DiagnosisController {
     @RequestMapping(value = "/diagnosis",method = RequestMethod.GET)
     public String diagnosis()
     {
+        System.out.print("testgit");
         return "diagnosis";
     }
 
