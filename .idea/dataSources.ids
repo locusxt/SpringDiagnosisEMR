@@ -1,32 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - hiberateDemo@localhost" uuid="1eb9d0a6-cf8c-403a-9e7e-b16842ca9ebb">
+  <data-source name="MySQL - ElectronicHealthRecord@localhost" uuid="8add9e45-f5b8-4950-af27-0fcf9eaa6b9e">
     <database-info product="MySQL" version="5.6.27" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
-    <schema name="" catalog="AutoDiagnosis"/>
-    <schema name="" catalog="hiberateDemo"/>
-    <table name="DoctorTable" schema="" catalog="AutoDiagnosis" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="username" sqlType="VARCHAR" precision="25" scale="0" nullable="true" jdbcType="12"/>
-      <column name="password" sqlType="VARCHAR" precision="25" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
-    <table name="blog" schema="" catalog="hiberateDemo" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="userid" columns="userid" ref-table="user" ref-schema="" ref-catalog="hiberateDemo" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-    </table>
-    <table name="user" schema="" catalog="hiberateDemo" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="userid" table="blog" schema="" catalog="hiberateDemo" columns="userid"/>
-    </table>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="ElectronicHealthRecord"/>
+      <table id="2" parent="1" name="doctor"/>
+      <table id="3" parent="1" name="patient"/>
+      <column id="4" parent="2" name="iddoctor">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="username">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="6" parent="2" name="password">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="7" parent="2" name="PRIMARY">
+        <columns>iddoctor</columns>
+        <primary>1</primary>
+      </key>
+      <column id="8" parent="3" name="idpatient">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="9" parent="3" name="patientName">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="10" parent="3" name="patientGender">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="11" parent="3" name="patientBirthday">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="12" parent="3" name="patientTelnumber">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="13" parent="3" name="patientHeight">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="14" parent="3" name="patientWeight">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="15" parent="3" name="patientAddress">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="16" parent="3" name="patientAge">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="17" parent="3" name="patientJob">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="18" parent="3" name="patientMarriage">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="19" parent="3" name="patientNation">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="20" parent="3" name="patientClinicState">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="21" parent="3" name="patientPersonID">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="22" parent="3" name="patientClinicID">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="23" parent="3" name="patientPaytype">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="24" parent="3" name="patientPaycardID">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="25" parent="3" name="PRIMARY">
+        <columns>idpatient</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>

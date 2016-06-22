@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - hiberateDemo@localhost" uuid="1eb9d0a6-cf8c-403a-9e7e-b16842ca9ebb">
+    <data-source name="MySQL - ElectronicHealthRecord@localhost" uuid="8add9e45-f5b8-4950-af27-0fcf9eaa6b9e">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>AutoDiagnosis.* hiberateDemo.*</schema-pattern>
-      <default-schemas>AutoDiagnosis.* hiberateDemo.*</default-schemas>
+      <schema-pattern>ElectronicHealthRecord.*</schema-pattern>
+      <default-schemas>ElectronicHealthRecord.*</default-schemas>
     </data-source>
   </component>
 </project>

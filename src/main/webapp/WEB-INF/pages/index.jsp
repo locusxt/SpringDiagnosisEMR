@@ -43,12 +43,7 @@
     });
 
     function doctor(){
-      document.loginform.action="/knowledge";
-      document.loginform.submit();
-    }
-    function patient()
-    {
-      document.loginform.action="/diagnosis";
+      document.loginform.action="/clinicDiagnosis";
       document.loginform.submit();
     }
   </script>
@@ -104,22 +99,21 @@
           </div>
           <div class="panel-body">
             <form  name="loginform"  method="post" role="form">
-              <div class="form-group">
-                <label for="usernameid">EmailAccount:</label>
-                <input type="text" class="form-control" id="usernameid" name="username" placeholder="Enter Name:"/>
-              </div>
 
+
+              <div class="form-group">
+              <label for="usernameid">username</label>
+              <input type="text" class="form-control" id="usernameid" name="username" placeholder="Enter Username:"/>
+            </div>
               <div class="form-group">
                 <label for="passwordid">Password:</label>
                 <input type="password" class="form-control" id="passwordid" name="password" placeholder="Enter Password:"/>
               </div>
               <div class="form-group">
                 <button type="button" class="btn btn-primary btn-lg" onclick="doctor()">
-                  我是医生
+                  医生登陆
                 </button>
-                <button type="button" class="btn btn-primary btn-lg" onclick="patient()">
-                  我来就诊
-                </button>
+
               </div>
             </form>
           </div>

@@ -12,11 +12,11 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.0.RELEASE" />
-          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons-core:1.4.0.RELEASE" />
@@ -39,6 +39,7 @@
           <element id="library" level="project" name="Maven: javassist:javassist:3.12.0.GA" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.34" />
           <element id="library" level="project" name="Maven: org.json:json:20080701" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

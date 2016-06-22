@@ -1,7 +1,5 @@
 package com.bindingdai.controller;
 
-import com.bindingdai.model.DoctorTableEntity;
-import com.bindingdai.repository.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,9 +16,8 @@ import java.util.List;
  */
 @Controller
 public class LoginController {
-    @Autowired
-    private DoctorRepository doctorRepository;
 
+    /*
     @RequestMapping(value="/index",method = RequestMethod.GET)
     public String index(Model model)
     {
@@ -31,7 +28,7 @@ public class LoginController {
 
 
 
-    @RequestMapping(value="/knowledge",method = RequestMethod.POST)
+    @RequestMapping(value="/diagnosis",method = RequestMethod.POST)
     public String login(HttpSession session,HttpServletRequest request,Model model)
     {
         String username=request.getParameter("username");
@@ -47,7 +44,7 @@ public class LoginController {
                 {
                     System.out.println("kkk到达");
                     model.addAttribute("username",username);
-                    return "knowledge";
+                    return "diagnosis";
                 }
                 flag=1;
 
@@ -59,12 +56,14 @@ public class LoginController {
         return "redirect:/";
     }
 
-    @RequestMapping(value="/knowledge",method = RequestMethod.GET)
-    public String knowledgeBase(HttpSession session,Model model)
+
+    @RequestMapping(value="/diagnosis",method = RequestMethod.GET)
+    public String Diagnosis(HttpSession session,Model model)
     {
         String username =(String) session.getAttribute("usernamesession");
         System.out.println("登录后的username"+username);
         model.addAttribute("username",username);
-        return "knowledge";
+        return "diagnosis";
     }
+ */
 }

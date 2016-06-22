@@ -136,6 +136,7 @@
         contentType: "application/json",
         dataType: 'json'
       });
+
   }
 
   $(function(){
