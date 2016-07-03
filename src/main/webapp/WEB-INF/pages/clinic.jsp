@@ -34,31 +34,72 @@
 
 
     //Json数据源
-    var patients=[
-        {"id": 1, "name": "张三","gender":"男","age":"25","clinicId":"20160424001","IdNumber":"510234199211230040"},
-        {"id": 2, "name": "李四","gender":"男","age":"23","clinicId":"20160424002","IdNumber":"5102341992112300030"},
-        {"id": 3, "name": "qingzi","gender":"女","age":"21","clinicId":"20160424003","IdNumber":"510234199211230041"},
-        {"id": 4, "name": "qingzi1","gender":"女","age":"21","clinicId":"20160424003","IdNumber":"510234199211230041"}
-            ];
-    var disease= [
-        {"id":1,"name":"糖尿病"},
-        {"id":2,"name":"高血压"},
-        {"id":3,"name":"感冒"},
-        {"id":4,"name":"中风"},
-        {"id":5,"name":"发烧"},
-        {"id":6,"name":"中草"},
-
-    ];
-    var symptom= [
-        {"id":1,"name":"头疼"},
-        {"id":2,"name":"鼻塞"},
-        {"id":3,"name":"咳嗽"},
-        {"id":4,"name":"胸痛"},
-        {"id":5,"name":"咳血"},
-
-    ];
-
     var globalpatientinfo;
+    var globalpatient_sym={};
+    var full_meta_info={};
+    function getCurrentPatientSymptom()
+    {
+        var allge=$("#allergy_info").val();
+        var history_diagnosis=$("#history_disease_info").val();
+        var symptom=$("#MainSymptom").val();
+        var phy_exam=$("#PhysicalExam").val();
+
+    }
+    function getFullMetaData()
+    {
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_symptom_metadata",
+            type:"post",
+            success:function(data){
+                var data_json=JSON.parse(data);
+                full_meta_info.symptom=data_json;
+            }
+        });
+
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_diagnosis_metadata",
+            type:"post",
+            success:function(data){
+                var data_json = JSON.parse(data);
+                full_meta_info.diagnosis=data_json;
+            }
+        });
+
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_phy_exam_metadata",
+            type:"post",
+            success:function(data){
+                var data_json = JSON.parse(data);
+                full_meta_info.phy_exam=data_json;
+
+                //console.log(data);
+            }
+        });
+
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_instru_exam_metadata",
+            type:"post",
+            success:function(data){
+                var data_json = JSON.parse(data);
+                full_meta_info.instru_exam=data_json;
+            }
+        });
+
+
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_drug_metadata",
+            type:"post",
+            success:function(data){
+                var data_json = JSON.parse(data);
+                full_meta_info.drug=data_json;
+            }
+        });
+    }
 
     //打开诊疗卡号搜索框
     function Search_clinic_id()
@@ -95,11 +136,11 @@
     {
         var allergy=$("#allery_select").val();
 
-        if($("#allery_info").val()!="")
+        if($("#allergy_info").val()!="")
         {
-            allergy+=(","+$("#allery_info").val());
+            allergy+=(","+$("#allergy_info").val());
         }
-        $("#allery_info").val(allergy);
+        $("#allergy_info").val(allergy);
         $("#add_allergy").modal('hide');
     };
     function waitinglist_update (obj) {
@@ -185,7 +226,7 @@
         $("#MainSymptom").val(main_symptom);
         $("#add_Symptom").modal('hide');
     }
-
+    /*
     function search_clinic_iddata()
     {
         var search_text=$("#search_patient").val();
@@ -220,6 +261,7 @@
         }
 
     };
+    */
 
     function search_history_disease()
     {
@@ -230,7 +272,7 @@
                                 "<td>"+"既往病史"+"</td>"+
                                 "</tr>"
                         ;
-                $.each(disease,function(id, item){
+                $.each(full_meta_info.diagnosis,function(id, item){
                     //如果包含则为table赋值
                     if(item.name.indexOf(search_text)!=-1){
                         tab+="<tr align='center' ><td> <button class='btn btn-link ' onclick='patient_history_disease_update(this)'>" +
@@ -258,7 +300,7 @@
                             "<td>"+"初步诊断"+"</td>"+
                             "</tr>"
                     ;
-            $.each(disease,function(id, item){
+            $.each(full_meta_info.diagnosis,function(id, item){
                 //如果包含则为table赋值
                 if(item.name.indexOf(search_text)!=-1){
                     tab+="<tr align='center' ><td> <button class='btn btn-link ' onclick='patient_diagnosis_update(this)'>" +
@@ -282,7 +324,7 @@
                             "<td>"+"初步诊断"+"</td>"+
                             "</tr>"
                     ;
-            $.each(disease,function(id, item){
+            $.each(full_meta_info.diagnosis,function(id, item){
                 //如果包含则为table赋值
                 if(item.name.indexOf(search_text)!=-1){
                     tab+="<tr align='center' ><td> <button class='btn btn-link ' onclick='patient_diagnosis_update(this)'>" +
@@ -308,7 +350,7 @@
                             "<td>"+"主诉症状"+"</td>"+
                             "</tr>"
                     ;
-            $.each(symptom,function(id, item){
+            $.each(full_meta_info.symptom,function(id, item){
                 //如果包含则为table赋值
                 if(item.name.indexOf(search_text)!=-1){
                     tab+="<tr align='center' ><td> <button class='btn btn-link ' onclick='main_symptom_update(this)'>" +
@@ -325,9 +367,34 @@
 
 
     };
+    //保存主界面病人电子病历记录
+    function savePatientRecord(){
+        var patientrecord={};
+        patientrecord.symptom=$("#MainSymptom").val();
+        patientrecord.clinicid=$("#patient_clinic_id").val();
+        patientrecord.firstdiagnosis=$("#FirstDiagnosis").val();
+        patientrecord.history_disease=$("#history_disease_info").val();
+        patientrecord.name=$("#patient_name").val();
+        //console.log(patientrecord);
+        //alert("test");
+        $.ajax({
+            type: 'POST',
+            url: "ajax/save_patient_record",
+            data: JSON.stringify (patientrecord), // or JSON.stringify ({name: 'jonas'}),
+            success: function(d) {
+               // alert('data: ' + d);
+            },
+            contentType: "application/json",
+            dataType: 'json'
+        });
+    }
+
     function writePrescription(){
 
         document.write_prescription.action="/write_order";
+
+        savePatientRecord();
+
         var clinic_id=$("#patient_clinic_id").val();
         //alert(clinic_id);
         $("#write_prescription").val(clinic_id);
@@ -337,6 +404,8 @@
     $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
         var patient_db;
+        getFullMetaData();
+        console.log(full_meta_info);
         $.ajax({
             //解析从后台返回的json数据
             url:"/updateWaiting" ,
@@ -420,7 +489,6 @@
                     <a href="#" class="dropdown-toggle" id="ClinicDiagnosisiDropDown" data-toggle="dropdown">诊疗收费 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="../clinicDiagnosis/">日常诊疗</a></li>
-                        <li><a href="../order/">处方开具</a></li>
                         <li><a href="#">记账核销</a></li>
                         <li><a href="../patientManage">患者管理</a></li>
 
@@ -565,7 +633,7 @@
                             <td>
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <input type="text" placeholder="..." class="form-control flat" id="allery_info" />
+                                        <input type="text" placeholder="..." class="form-control flat" id="allergy_info" />
                                     </div>
                                    <div class="col-md-2">
                                        <button class="btn btn-sm btn-primary " onclick="add_allergy()">

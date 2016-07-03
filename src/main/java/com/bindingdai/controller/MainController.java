@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.bindingdai.repository.*;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -39,7 +38,18 @@ public class MainController {
     private DoctorRepository DoctorRepository;
     @Autowired
     private PatientRepository patientRepository;
-
+    @Autowired
+    private SymptomRepository symptomRepository;
+    @Autowired
+    private DiagnosisRepository diagnosisRepository;
+    @Autowired
+    private PhysicalExamRepository physicalExamRepository;
+    @Autowired
+    private InstrumentRepository instrumentRepository;
+    @Autowired
+    private DrugRepository drugRepository;
+    @Autowired
+    private PatientRecordRepository patientRecordRepository;
 
 
     @RequestMapping(value="/",method = RequestMethod.GET)
@@ -206,7 +216,7 @@ public class MainController {
     public String waiting_patient_info(@RequestBody String patient_info ) throws Exception
     {
         System.out.println("begin_post_knowledge");
-        System.out.println(patient_info);
+       // System.out.println(patient_info);
 
         JSONObject jb=new JSONObject(patient_info);
         //将json格式的字符串转换为json对象，并取得该对象的“userName”属性值
@@ -234,13 +244,15 @@ public class MainController {
     @ResponseBody
     public String finish_diagnosis(@RequestBody String order_info ) throws Exception
     {
-        //System.out.println("begin_post_knowledge");
+        System.out.println("begin_post_patient_record");
         //System.out.println(patient_info);
 
         JSONObject jb=new JSONObject(order_info);
         //将json格式的字符串转换为json对象，并取得该对象的“userName”属性值
         String clinicId=jb.getString("clinicId");
+        String drug=jb.getString("drug");
         //String m=jb.getString("name");
+        System.out.println("drug is"+drug);
 
         List<PatientEntity>   patientEntityList=patientRepository.findAll();
         for(PatientEntity patientKey: patientEntityList)
@@ -252,8 +264,151 @@ public class MainController {
             }
         }
 
+        List<PatientRecordEntity> patientRecordEntityList=patientRecordRepository.findAll();
+        for(PatientRecordEntity patientRecordEntity:patientRecordEntityList)
+        {
+            if(patientRecordEntity.getPatientRecordState()==2)
+            {
+                patientRecordEntity.setPatientRecordDrug(drug.trim());
+                patientRecordEntity.setPatientRecordState(1);
+                patientRecordRepository.saveAndFlush(patientRecordEntity);
+            }
+        }
+
         System.out.println("finish_diagnosis");
         return "";
     }
+
+    @RequestMapping (value = "/ajax/save_patient_record", method=RequestMethod.POST)
+    @ResponseBody
+    public String Save_Patient_Record(@RequestBody String patientrecord ) throws Exception
+    {
+
+
+        JSONObject jb=new JSONObject(patientrecord);
+
+        //将json格式的字符串转换为json对象，并取得该对象的“userName”属性值
+        String clinicid=jb.getString("clinicid");
+
+        String symptom=jb.getString("symptom");
+        //System.out.println("Symptom is"+symptom);
+
+        String diagnosis=jb.getString("firstdiagnosis");
+        String history_disease=jb.getString("history_disease");
+        //String name=jb.getString("name");
+
+       PatientRecordEntity patientRecordEntity=new PatientRecordEntity();
+        patientRecordEntity.setClinicid(clinicid);
+        patientRecordEntity.setPatientRecordSymptom(symptom);
+        patientRecordEntity.setPatientRecordDiagnosis(diagnosis);
+        //patientRecordEntity.setPatientRecord;
+        patientRecordEntity.setPatientRecordState(2);
+        patientRecordRepository.saveAndFlush(patientRecordEntity);
+
+        System.out.println("finish_save_record");
+        return "";
+    }
+
+
+    @RequestMapping("/post_symptom_metadata"  )
+    public void post_sym_metadata(HttpServletRequest request, HttpServletResponse response) throws Exception  {
+
+        List<SymptomEntity> symptomEntityList=symptomRepository.findAll();
+        List<DiagnosisEntity> diagnosisEntityList=diagnosisRepository.findAll();
+        List<PhysicalExamEntity> physicalExamEntityList=physicalExamRepository.findAll();
+        List<InstrumentExamEntity> instrumentExamEntityList=instrumentRepository.findAll();
+        List<DrugEntity> drugEntityList=drugRepository.findAll();
+        JSONArray jsons_symptom=new JSONArray();
+        for(SymptomEntity symptomEntity:symptomEntityList)
+        {
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",symptomEntity.getIdSymptom());
+            jsonObject.put("name",symptomEntity.getSymptomName());
+            jsons_symptom.put(jsonObject);
+        }
+        response.getWriter().print(jsons_symptom.toString());
+    }
+
+
+    @RequestMapping("/post_diagnosis_metadata"  )
+    public void post_diagnosis_metadata(HttpServletRequest request, HttpServletResponse response) throws Exception  {
+
+
+        List<DiagnosisEntity> diagnosisEntityList=diagnosisRepository.findAll();
+
+        //List<DrugEntity> drugEntityList=drugRepository.findAll();
+        JSONArray jsons=new JSONArray();
+        for(DiagnosisEntity diagnosisEntity:diagnosisEntityList)
+        {
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",diagnosisEntity.getIddiagnosis());
+            jsonObject.put("name",diagnosisEntity.getDiagnosisName());
+            jsons.put(jsonObject);
+        }
+        response.getWriter().print(jsons.toString());
+    }
+
+
+    @RequestMapping("/post_phy_exam_metadata"  )
+    public void post_phy_exam_metadata(HttpServletRequest request, HttpServletResponse response) throws Exception  {
+
+
+        //List<DiagnosisEntity> diagnosisEntityList=diagnosisRepository.findAll();
+        List<PhysicalExamEntity> physicalExamEntityList=physicalExamRepository.findAll();
+        //List<DrugEntity> drugEntityList=drugRepository.findAll();
+        JSONArray jsons=new JSONArray();
+        for(PhysicalExamEntity physicalExamEntity:physicalExamEntityList)
+        {
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",physicalExamEntity.getIdphysicalExam());
+            jsonObject.put("Content",physicalExamEntity.getPhysicalExamContent());
+            jsonObject.put("Value",physicalExamEntity.getPhysicalExamValue());
+            jsonObject.put("organ",physicalExamEntity.getPhysicalExamOrgan());
+            jsons.put(jsonObject);
+        }
+        response.getWriter().print(jsons.toString());
+    }
+
+    @RequestMapping("/post_instru_exam_metadata"  )
+    public void post_instru_exam_metadata(HttpServletRequest request, HttpServletResponse response) throws Exception  {
+
+
+        //List<DiagnosisEntity> diagnosisEntityList=diagnosisRepository.findAll();
+        List<InstrumentExamEntity> instrumentExamEntityList=instrumentRepository.findAll();
+        //List<DrugEntity> drugEntityList=drugRepository.findAll();
+        JSONArray jsons=new JSONArray();
+        for(InstrumentExamEntity instrumentExamEntity:instrumentExamEntityList)
+        {
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",instrumentExamEntity.getIdinstrumentExam());
+            jsonObject.put("Content",instrumentExamEntity.getInstrumentExamContent());
+            jsonObject.put("Value",instrumentExamEntity.getInstrumentExamValue());
+            jsons.put(jsonObject);
+        }
+        response.getWriter().print(jsons.toString());
+    }
+
+
+    @RequestMapping("/post_drug_metadata"  )
+    public void post_drug_metadata(HttpServletRequest request, HttpServletResponse response) throws Exception  {
+
+
+        //List<DiagnosisEntity> diagnosisEntityList=diagnosisRepository.findAll();
+        //List<PhysicalExamEntity> physicalExamEntityList=physicalExamRepository.findAll();
+        List<DrugEntity> drugEntityList=drugRepository.findAll();
+        JSONArray jsons=new JSONArray();
+        for(DrugEntity drugEntity:drugEntityList)
+        {
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("id",drugEntity.getIddrug());
+            jsonObject.put("drug_name",drugEntity.getDrugName());
+            jsonObject.put("drug_spec",drugEntity.getDrugSpec());
+            jsonObject.put("drug_produce_company",drugEntity.getDrugProduceCompany());
+            jsonObject.put("drug_per_prize",drugEntity.getDrugPerPrize());
+            jsons.put(jsonObject);
+        }
+        response.getWriter().print(jsons.toString());
+    }
+
 
 }

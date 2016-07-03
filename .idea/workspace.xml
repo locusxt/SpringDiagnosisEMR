@@ -1,95 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d235cd75-b1f6-4caf-8fea-188db06f15ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/flatui/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons/flat-ui-icons-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons/flat-ui-icons-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons/flat-ui-icons-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-black.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-black.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bolditalic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bolditalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bolditalic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-italic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-italic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-italic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinicDiagnosis.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/flatui/flat-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/glyphicons/selection.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-black.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bold.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-bolditalic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-italic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-light.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts/lato/lato/lato-regular.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/DiagnosisController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/BlogEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/UserEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/UserRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/DiagnosisController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/model/BlogEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/model/DoctorTableEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/model/UserEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/repository/UserRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/DiagnosisController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/model/BlogEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/model/DoctorTableEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/model/UserEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/repository/UserRepository.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorTableEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis_old.jsp" />
+    <list default="true" id="d235cd75-b1f6-4caf-8fea-188db06f15ba" name="Default" comment="history commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DiagnosisEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DrugEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/InstrumentExamEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientRecordEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PhysicalExamEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/SymptomEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/InstrumentRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRecordRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/SymptomRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DiagnosisRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/MainController.class" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/RegisterController.class" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/controller/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/repository/DoctorRepository.class" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/com/bindingdai/repository/DoctorRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/RegisterController.class" afterPath="$PROJECT_DIR$/target/classes/com/bindingdai/controller/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bindingdai/repository/DoctorRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/bindingdai/repository/DoctorRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpringDiagnosis_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringDiagnosis_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringDiagnosis.iml" afterPath="$PROJECT_DIR$/SpringDiagnosis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/KnowledgeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/KnowledgeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/knowledge.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/knowledge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/testjsp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/testjsp.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/diagnosis.jsp" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/diagnosis.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/knowledge.jsp" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/knowledge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/testjsp.jsp" afterPath="$PROJECT_DIR$/target/SpringDiagnosis/WEB-INF/pages/testjsp.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
     </list>
     <ignored path="SpringDiagnosis.iws" />
@@ -127,24 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clinic.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="504" column="28" selection-start-line="504" selection-start-column="28" selection-end-line="504" selection-end-column="28" />
-              <folding>
-                <marker date="1466584741000" expanded="true" signature="7115:7254" placeholder="..." />
-                <marker date="1466584741000" expanded="true" signature="10872:10964" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-936">
-              <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+            <state relative-caret-position="498">
+              <caret line="293" column="10" selection-start-line="293" selection-start-column="10" selection-end-line="293" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,120 +77,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/LoginController.java">
+      <file leaf-file-name="ontologymanager_2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ontologymanager_2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+            <state relative-caret-position="3801">
+              <caret line="330" column="14" selection-start-line="330" selection-start-column="14" selection-end-line="330" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4995">
-              <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
-              <folding>
-                <marker date="1466384224000" expanded="true" signature="5536:5561" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5577:7372" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5577:7455" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5657:5683" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5658:5683" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5774:5800" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5775:5800" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5868:5906" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5880:5906" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="5881:5906" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6027:6054" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6029:6054" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6118:6156" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6305:6343" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6546:6573" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6548:6573" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6637:6675" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6870:6896" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6871:6896" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="6960:6998" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="7193:7218" placeholder="..." />
-                <marker date="1466384224000" expanded="true" signature="7295:7320" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatientManageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-456">
-              <caret line="69" column="85" selection-start-line="69" selection-start-column="85" selection-end-line="69" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoctorEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1260">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatientEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patientManage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diagnosis_old.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis_old.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1889">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="73" />
-              <folding>
-                <marker date="1459914685000" expanded="true" signature="7175:8718" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="7304:8700" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="7350:7614" placeholder="..." />
-                <marker date="1459914685000" expanded="false" signature="7671:7684" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="7686:8681" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="9812:9923" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="10012:10373" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="12900:13077" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="14227:14402" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="15628:15731" placeholder="..." />
-                <marker date="1459914685000" expanded="true" signature="16684:16778" placeholder="..." />
+                <marker date="1459914685000" expanded="true" signature="5021:5191" placeholder="..." />
+                <marker date="1459914685000" expanded="true" signature="7300:7309" placeholder="..." />
+                <marker date="1459914685000" expanded="true" signature="7720:7729" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -277,8 +97,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -324,16 +144,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/testjsp.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinicDiagnosis.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/model/SymptomEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/SymptomRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/AllRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DiagnosisRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/physicalExamRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/InstrumentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/drugRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRecordRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -391,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,20 +247,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringDiagnosis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringDiagnosis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -448,36 +260,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringDiagnosis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringDiagnosis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -629,11 +411,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -648,11 +432,8 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/images" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.bindingdai.model" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bindingdai.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/fonts" />
@@ -660,6 +441,12 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/flatui" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/zTreeStyle/img" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.bindingdai.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/images" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat7">
@@ -1181,12 +968,24 @@
       <workItem from="1466338364622" duration="8453000" />
       <workItem from="1466349772042" duration="157000" />
       <workItem from="1466382963493" duration="8869000" />
-      <workItem from="1466583600961" duration="1008000" />
+      <workItem from="1466583600961" duration="7407000" />
+      <workItem from="1466750957509" duration="5110000" />
+      <workItem from="1467424769249" duration="2308000" />
+      <workItem from="1467427327506" duration="1351000" />
+      <workItem from="1467513548117" duration="6099000" />
     </task>
+    <task id="LOCAL-00001" summary="history commit">
+      <created>1466584899406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466584899406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258300000" />
+    <option name="totallyTimeSpent" value="279567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1211,13 +1010,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29452056" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40136987" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5067961" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3117932" sideWeight="0.3340961" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3117932" sideWeight="0.7067961" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3117932" sideWeight="0.66590387" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.49320388" order="1" side_tool="false" content_ui="tabs" />
@@ -1232,6 +1031,38 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46849316" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.49320388" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11917808" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29452056" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3117932" sideWeight="0.28349516" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3117932" sideWeight="0.7165049" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1259,53 +1090,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/demo/cn/exedit/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="99" column="100" selection-start-line="99" selection-start-column="100" selection-end-line="99" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/zTreeStyle/zTreeStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/metroStyle/metroStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/zTreeStyle/img/zTreeStandard.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/zTreeStyle/img/loading.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/zTree/css/zTreeStyle/img/zTreeStandard.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorTableEntity.java" />
-    <entry file="file://$PROJECT_DIR$/SpringDiagnosis.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/clinical_diagnosis.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/UserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PhysicaiExamEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/HelloWorld.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1320,15 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-435">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,19 +1124,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/ClinicEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/InstrumentExamRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/InstrumentExamEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/AllgenEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DepartmentRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/ClinicRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PhysicalExamRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1370,23 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ontologymanager_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="330" column="14" selection-start-line="330" selection-start-column="14" selection-end-line="330" selection-end-column="14" />
-          <folding>
-            <marker date="1459914685000" expanded="true" signature="5021:5191" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="7300:7309" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="7720:7729" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,11 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
           <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="139" selection-end-column="3" />
-          <folding>
-            <marker date="1462334708000" expanded="true" signature="6889:7093" placeholder="..." />
-            <marker date="1462334708000" expanded="true" signature="9191:9200" placeholder="..." />
-            <marker date="1462334708000" expanded="true" signature="9647:9656" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1406,34 +1153,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/KnowledgeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1445,20 +1175,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis_old.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1889">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/testjsp.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
+        <state relative-caret-position="457">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/InstrumentExamEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/SymptomEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DiagnosisEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1755">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/AllRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PhysicalExamRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PhysicalExamEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DrugEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/InstrumentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DrugRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DiagnosisRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1467,130 +1295,151 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/diagnosis_old.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/DoctorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1889">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="73" />
+        <state relative-caret-position="105">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
-            <marker date="1459914685000" expanded="true" signature="7175:8718" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="7304:8700" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="7350:7614" placeholder="..." />
-            <marker date="1459914685000" expanded="false" signature="7671:7684" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="7686:8681" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="9812:9923" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="10012:10373" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="12900:13077" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="14227:14402" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="15628:15731" placeholder="..." />
-            <marker date="1459914685000" expanded="true" signature="16684:16778" placeholder="..." />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/SymptomRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1260">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4995">
-          <caret line="197" column="31" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
+        <state relative-caret-position="120">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <marker date="1466384224000" expanded="true" signature="5536:5561" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5577:7372" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5577:7455" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5657:5683" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5658:5683" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5774:5800" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5775:5800" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5868:5906" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5880:5906" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="5881:5906" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6027:6054" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6029:6054" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6118:6156" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6305:6343" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6546:6573" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6548:6573" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6637:6675" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6870:6896" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6871:6896" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="6960:6998" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="7193:7218" placeholder="..." />
-            <marker date="1466384224000" expanded="true" signature="7295:7320" placeholder="..." />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/repository/PatientRecordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/patientManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="103">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="208">
+          <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1467530053000" expanded="true" signature="5564:5589" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5605:7427" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5605:7510" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5685:5711" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5686:5711" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5802:5828" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5803:5828" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5896:5934" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5908:5934" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="5909:5934" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6055:6082" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6057:6082" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6146:6184" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6333:6371" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6574:6601" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6576:6601" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6665:6703" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6898:6924" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6899:6924" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="6988:7026" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="7221:7246" placeholder="..." />
+            <marker date="1467530053000" expanded="true" signature="7323:7348" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientRecordEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/PatientManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="69" column="85" selection-start-line="69" selection-start-column="85" selection-end-line="69" selection-end-column="85" />
+        <state relative-caret-position="285">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/DoctorEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/model/PatientEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="498">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clinic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="504" column="28" selection-start-line="504" selection-start-column="28" selection-end-line="504" selection-end-column="28" />
+        <state relative-caret-position="141">
+          <caret line="507" column="32" selection-start-line="507" selection-start-column="32" selection-end-line="507" selection-end-column="32" />
           <folding>
-            <marker date="1466584741000" expanded="true" signature="7115:7254" placeholder="..." />
-            <marker date="1466584741000" expanded="true" signature="10872:10964" placeholder="..." />
+            <marker date="1467559108000" expanded="true" signature="8039:8178" placeholder="..." />
+            <marker date="1467559108000" expanded="true" signature="12754:12846" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ontologymanager_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3801">
+          <caret line="330" column="14" selection-start-line="330" selection-start-column="14" selection-end-line="330" selection-end-column="14" />
+          <folding>
+            <marker date="1459914685000" expanded="true" signature="5021:5191" placeholder="..." />
+            <marker date="1459914685000" expanded="true" signature="7300:7309" placeholder="..." />
+            <marker date="1459914685000" expanded="true" signature="7720:7729" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bindingdai/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="293" column="10" selection-start-line="293" selection-start-column="10" selection-end-line="293" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

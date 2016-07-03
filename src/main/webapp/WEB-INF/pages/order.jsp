@@ -27,7 +27,9 @@
     var order_data='${patientKey}';
     order_data_json = eval("(" + order_data + ")");
     console.log(order_data_json);
+    var drug;
 
+    /*
     var drug=[
         {"id": 1, "name": "维生素C","type":"inject","specific":"500mg 2支","producer":"","prize":"5.0"},
         {"id": 2, "name": "布洛芬悬液","type":"oral","specific":"100ml 2g/瓶","producer":"","prize":"18.5"},
@@ -50,7 +52,7 @@
         {"id":6,"name":"中草"},
 
     ];
-
+    */
 
 
 
@@ -154,6 +156,7 @@
     var i=1;
     function druginfo_update(obj)
     {
+
         var name=$(obj).parent().parent().children("td").eq(0).text();
         var specific=$(obj).parent().parent().children("td").eq(1).text();
 
@@ -169,7 +172,7 @@
                 "<td><input type='text' class='form-control flat' style=' background-color: #5bc0de'> "+"</td>" +         //总量
                 "<td><select style='width: auto; background-color: #5bc0de' class='form-control flat'> <option>g</option> <option>袋</option> <option>盒</option></select> "+"</td>" +         //单位
                // "<td><input type='text' class='form-control flat' style='background-color: #00a1cb'> "+"</td>" +       //嘱托
-                "<td><button type='button'  style='background-color: #5bc0de' class='btn  btn-sm form-control flat' ><span class='glyphicon glyphicon-trash'></button> "+"</td>" +       //操作
+                "<td><button type='button'  style='background-color: #5bc0de' class='btn  btn-sm form-control flat' onclick='deleteDrug(this)' ><span class='glyphicon glyphicon-trash'></button> "+"</td>" +       //操作
                 "</tr>";
         $("#drug_use ").append(result);
         console.log(result);
@@ -180,11 +183,27 @@
 
     };
 
+    function deleteDrug(obj) {
+        console.log($(obj).parent().parent().text());
+        var line=$(obj).parent().parent();
+        line.remove();
+
+
+    }
     function finish_diagnosis()
     {
 
         var clinic_id_number=$("#patient_clinic_id").val();
-        var order_info={"clinicId":clinic_id_number};
+        var drug_list=$("#drug_use").children("tbody").children("tr");
+        var patient_record_drug="";
+        for(var k=0;k<drug_list.length;k++)
+        {
+            var tdArray=drug_list.eq(k).find("td");
+            var drug_name=tdArray.eq(1).val();
+            patient_record_drug=patient_record_drug+drug_name+",";
+
+        }
+        var order_info={"clinicId":clinic_id_number,"drug":patient_record_drug};
 
 
         $.ajax({
@@ -215,12 +234,12 @@
                         ;
                 $.each(drug,function(id, item){
                     //如果包含则为table赋值
-                    if(item.name.indexOf(search_text)!=-1){
+                    if(item.drug_name.indexOf(search_text)!=-1){
                         tab+="<tr align='center' ><td> <button class='btn btn-sm btn-link' onclick='druginfo_update(this)'>" +
-                                ""+item.name+"" + "</button> </td>" +
-                                "<td>" +item.specific+"</td>" +
-                                "<td>"+item.producer+"</td>" +
-                                "<td>"+item.prize+"</td>" +
+                                ""+item.drug_name+"" + "</button> </td>" +
+                                "<td>" +item.drug_spec+"</td>" +
+                                "<td>"+item.drug_produce_company+"</td>" +
+                                "<td>"+item.drug_per_prize+"</td>" +
                                 "</tr>";
                     }
                 });
@@ -247,6 +266,19 @@
             console.log("finished");
         }
 
+        $.ajax({
+            //解析从后台返回的json数据
+            url:"/post_drug_metadata",
+            type:"post",
+            success:function(data){
+                drug = JSON.parse(data);
+                //console.log(data_json);
+                console.log(drug);
+
+            }
+        });
+
+
     });
 
 </script>
@@ -266,7 +298,6 @@
                     <a href="#" class="dropdown-toggle" id="ClinicDiagnosisiDropDown" data-toggle="dropdown">诊疗收费 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="../clinicDiagnosis/">日常诊疗</a></li>
-                        <li><a href="../order/">处方开具</a></li>
                         <li><a href="#">记账核销</a></li>
                         <li><a href="../patientManage">患者管理</a></li>
 

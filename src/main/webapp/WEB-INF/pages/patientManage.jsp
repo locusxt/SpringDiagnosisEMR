@@ -15,25 +15,18 @@
 </head>
 <body>
 <script type="text/javascript">
+    /*
     var drug=[
         {"id": 1, "name": "维生素C","type":"inject","specific":"500mg 2支","producer":"","prize":"5.0"},
         {"id": 2, "name": "布洛芬悬液","type":"oral","specific":"100ml 2g/瓶","producer":"","prize":"18.5"},
         {"id": 3, "name": "xy","type":"physican","specific":"10mg:2g/支","producer":"","prize":"33.0"},
         {"id": 4, "name": "维生素B","type":"inject","specific":"200mg 2支","producer":"","prize":"21"}
     ];
-
+      */
 
     var patients;
 
-    var disease= [
-        {"id":1,"name":"糖尿病"},
-        {"id":2,"name":"高血压"},
-        {"id":3,"name":"感冒"},
-        {"id":4,"name":"中风"},
-        {"id":5,"name":"发烧"},
-        {"id":6,"name":"中草"},
 
-    ];
     var patient_db;
 
     //进入候诊
@@ -51,6 +44,8 @@
             contentType: "application/json",
             dataType: 'json'
         });
+
+
         console.log("post info finish");
         window.location.href="/clinicDiagnosis/";
     }
@@ -164,7 +159,6 @@
                     <a href="#" class="dropdown-toggle" id="ClinicDiagnosisiDropDown" data-toggle="dropdown">诊疗收费 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="../clinicDiagnosis/">日常诊疗</a></li>
-                        <li><a href="../order/">处方开具</a></li>
                         <li><a href="#">记账核销</a></li>
                         <li><a href="../patientManage/">患者管理</a></li>
 

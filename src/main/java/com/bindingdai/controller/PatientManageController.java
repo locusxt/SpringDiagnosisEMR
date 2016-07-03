@@ -1,7 +1,5 @@
 package com.bindingdai.controller;
 
-import com.bindingdai.model.PatientEntity;
-import com.bindingdai.repository.DoctorRepository;
 import com.bindingdai.repository.PatientRepository;
 import com.google.gson.*;
 import org.json.JSONObject;
@@ -15,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.bindingdai.model.*;
 import java.util.List;
 
 /**

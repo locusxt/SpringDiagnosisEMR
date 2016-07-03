@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.bindingdai.repository.DoctorRepository;
-import com.bindingdai.model.DoctorEntity;
+import com.bindingdai.model.*;
 
 /**
  * Created by daibinding on 15/10/18.
