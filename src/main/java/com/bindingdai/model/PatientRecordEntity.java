@@ -3,10 +3,10 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/7/3.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
-@Table(name = "patient_record", schema = "ElectronicHealthRecord", catalog = "")
+@Table(name = "patientRecord", schema = "ElectronicHealthRecord", catalog = "")
 public class PatientRecordEntity {
     private int idpatientRecord;
     private String clinicid;
@@ -26,7 +26,7 @@ public class PatientRecordEntity {
     private String patientRecordDrug;
 
     @Id
-    @Column(name = "idpatient_record", nullable = false)
+    @Column(name = "idpatientRecord", nullable = false)
     public int getIdpatientRecord() {
         return idpatientRecord;
     }
@@ -46,7 +46,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_height", nullable = true, length = 45)
+    @Column(name = "patientRecordHeight", nullable = true, length = 45)
     public String getPatientRecordHeight() {
         return patientRecordHeight;
     }
@@ -56,7 +56,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_weight", nullable = true, length = 45)
+    @Column(name = "patientRecordWeight", nullable = true, length = 45)
     public String getPatientRecordWeight() {
         return patientRecordWeight;
     }
@@ -66,7 +66,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_width", nullable = true, length = 45)
+    @Column(name = "patientRecordWidth", nullable = true, length = 45)
     public String getPatientRecordWidth() {
         return patientRecordWidth;
     }
@@ -76,7 +76,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_temperature", nullable = true, length = 45)
+    @Column(name = "patientRecordTemperature", nullable = true, length = 45)
     public String getPatientRecordTemperature() {
         return patientRecordTemperature;
     }
@@ -86,7 +86,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_pulse", nullable = true, length = 45)
+    @Column(name = "patientRecordPulse", nullable = true, length = 45)
     public String getPatientRecordPulse() {
         return patientRecordPulse;
     }
@@ -96,7 +96,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_breath", nullable = true, length = 45)
+    @Column(name = "patientRecordBreath", nullable = true, length = 45)
     public String getPatientRecordBreath() {
         return patientRecordBreath;
     }
@@ -106,7 +106,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_blood_p_up", nullable = true, length = 45)
+    @Column(name = "patientRecordBloodPUp", nullable = true, length = 45)
     public String getPatientRecordBloodPUp() {
         return patientRecordBloodPUp;
     }
@@ -116,7 +116,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_blood_p_down", nullable = true, length = 45)
+    @Column(name = "patientRecordBloodPDown", nullable = true, length = 45)
     public String getPatientRecordBloodPDown() {
         return patientRecordBloodPDown;
     }
@@ -126,7 +126,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_symptom", nullable = true, length = 45)
+    @Column(name = "patientRecordSymptom", nullable = true, length = 45)
     public String getPatientRecordSymptom() {
         return patientRecordSymptom;
     }
@@ -136,7 +136,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_exam", nullable = true, length = 45)
+    @Column(name = "patientRecordExam", nullable = true, length = 45)
     public String getPatientRecordExam() {
         return patientRecordExam;
     }
@@ -146,7 +146,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_diagnosis", nullable = true, length = 45)
+    @Column(name = "patientRecordDiagnosis", nullable = true, length = 45)
     public String getPatientRecordDiagnosis() {
         return patientRecordDiagnosis;
     }
@@ -156,7 +156,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_time", nullable = true, length = 45)
+    @Column(name = "patientRecordTime", nullable = true, length = 45)
     public String getPatientRecordTime() {
         return patientRecordTime;
     }
@@ -166,7 +166,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_state", nullable = true)
+    @Column(name = "patientRecordState", nullable = true)
     public Integer getPatientRecordState() {
         return patientRecordState;
     }
@@ -176,7 +176,7 @@ public class PatientRecordEntity {
     }
 
     @Basic
-    @Column(name = "patient_record_drug", nullable = true, length = 45)
+    @Column(name = "patientRecordDrug", nullable = true, length = 45)
     public String getPatientRecordDrug() {
         return patientRecordDrug;
     }

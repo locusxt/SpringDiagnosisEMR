@@ -51,7 +51,7 @@ public class PatientManageController {
             jsonObject.addProperty("clinic_id",patientkey.getPatientClinicId());
             jsonObject.addProperty("paycard_id",patientkey.getPatientPaycardId());
             jsonObject.addProperty("age",patientkey.getPatientAge());
-            jsonObject.addProperty("telnumber",patientkey.getPatientTelnumber());
+            jsonObject.addProperty("telnumber",patientkey.getPatientTelNumber());
             jsonObject.addProperty("gender",patientkey.getPatientGender());
             System.out.println("生成json成功test");
             if(patientkey.getPatientPaytype()!=null)
@@ -105,15 +105,20 @@ public class PatientManageController {
         String paytype=jb.getString("paytype");
         //String m=jb.getString("name");
 
+        System.out.println(name+"save patient_info begin");
         newpa.setPatientName(name);
+
         newpa.setPatientClinicId(clinicid);
         newpa.setPatientGender(gender);
         newpa.setPatientAge(age);
         newpa.setPatientBirthday(birthday);
         newpa.setPatientPersonId(personid);
         newpa.setPatientPaytype(paytype);
+        newpa.setPatientClinicState("1");
+
+        System.out.println(name+"save patient_info finished1");
         patientRepository.saveAndFlush(newpa);
-        System.out.println(name);
+        System.out.println(name+"save patient_info finished2");
         System.out.println(clinicid);
         return "";
     }

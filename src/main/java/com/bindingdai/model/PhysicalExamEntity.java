@@ -3,10 +3,10 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
-@Table(name = "physical_exam", schema = "ElectronicHealthRecord", catalog = "")
+@Table(name = "physicalExam", schema = "ElectronicHealthRecord", catalog = "")
 public class PhysicalExamEntity {
     private int idphysicalExam;
     private String physicalExamContent;
@@ -14,7 +14,7 @@ public class PhysicalExamEntity {
     private String physicalExamOrgan;
 
     @Id
-    @Column(name = "idphysical_exam", nullable = false)
+    @Column(name = "idphysicalExam", nullable = false)
     public int getIdphysicalExam() {
         return idphysicalExam;
     }
@@ -24,7 +24,7 @@ public class PhysicalExamEntity {
     }
 
     @Basic
-    @Column(name = "physical_examContent", nullable = true, length = 45)
+    @Column(name = "physicalExamContent", nullable = true, length = 45)
     public String getPhysicalExamContent() {
         return physicalExamContent;
     }
@@ -34,7 +34,7 @@ public class PhysicalExamEntity {
     }
 
     @Basic
-    @Column(name = "physical_examValue", nullable = true, length = 45)
+    @Column(name = "physicalExamValue", nullable = true, length = 45)
     public String getPhysicalExamValue() {
         return physicalExamValue;
     }
@@ -44,7 +44,7 @@ public class PhysicalExamEntity {
     }
 
     @Basic
-    @Column(name = "physical_exam_organ", nullable = true, length = 45)
+    @Column(name = "physicalExamOrgan", nullable = true, length = 45)
     public String getPhysicalExamOrgan() {
         return physicalExamOrgan;
     }

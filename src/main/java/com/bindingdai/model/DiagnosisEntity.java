@@ -3,7 +3,7 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
 @Table(name = "diagnosis", schema = "ElectronicHealthRecord", catalog = "")
@@ -22,7 +22,7 @@ public class DiagnosisEntity {
     }
 
     @Basic
-    @Column(name = "diagnosis_name", nullable = true, length = 45)
+    @Column(name = "diagnosisName", nullable = true, length = 45)
     public String getDiagnosisName() {
         return diagnosisName;
     }

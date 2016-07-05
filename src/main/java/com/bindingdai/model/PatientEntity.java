@@ -3,7 +3,7 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
 @Table(name = "patient", schema = "ElectronicHealthRecord", catalog = "")
@@ -12,7 +12,7 @@ public class PatientEntity {
     private String patientName;
     private String patientGender;
     private String patientBirthday;
-    private String patientTelnumber;
+    private String patientTelNumber;
     private String patientHeight;
     private String patientWeight;
     private String patientAddress;
@@ -67,13 +67,13 @@ public class PatientEntity {
     }
 
     @Basic
-    @Column(name = "patientTelnumber", nullable = true, length = 45)
-    public String getPatientTelnumber() {
-        return patientTelnumber;
+    @Column(name = "patientTelNumber", nullable = true, length = 45)
+    public String getPatientTelNumber() {
+        return patientTelNumber;
     }
 
-    public void setPatientTelnumber(String patientTelnumber) {
-        this.patientTelnumber = patientTelnumber;
+    public void setPatientTelNumber(String patientTelNumber) {
+        this.patientTelNumber = patientTelNumber;
     }
 
     @Basic
@@ -157,7 +157,7 @@ public class PatientEntity {
     }
 
     @Basic
-    @Column(name = "patientPersonID", nullable = true, length = 45)
+    @Column(name = "patientPersonId", nullable = true, length = 45)
     public String getPatientPersonId() {
         return patientPersonId;
     }
@@ -167,7 +167,7 @@ public class PatientEntity {
     }
 
     @Basic
-    @Column(name = "patientClinicID", nullable = true, length = 45)
+    @Column(name = "patientClinicId", nullable = true, length = 45)
     public String getPatientClinicId() {
         return patientClinicId;
     }
@@ -187,7 +187,7 @@ public class PatientEntity {
     }
 
     @Basic
-    @Column(name = "patientPaycardID", nullable = true, length = 45)
+    @Column(name = "patientPaycardId", nullable = true, length = 45)
     public String getPatientPaycardId() {
         return patientPaycardId;
     }
@@ -209,7 +209,7 @@ public class PatientEntity {
             return false;
         if (patientBirthday != null ? !patientBirthday.equals(that.patientBirthday) : that.patientBirthday != null)
             return false;
-        if (patientTelnumber != null ? !patientTelnumber.equals(that.patientTelnumber) : that.patientTelnumber != null)
+        if (patientTelNumber != null ? !patientTelNumber.equals(that.patientTelNumber) : that.patientTelNumber != null)
             return false;
         if (patientHeight != null ? !patientHeight.equals(that.patientHeight) : that.patientHeight != null)
             return false;
@@ -243,7 +243,7 @@ public class PatientEntity {
         result = 31 * result + (patientName != null ? patientName.hashCode() : 0);
         result = 31 * result + (patientGender != null ? patientGender.hashCode() : 0);
         result = 31 * result + (patientBirthday != null ? patientBirthday.hashCode() : 0);
-        result = 31 * result + (patientTelnumber != null ? patientTelnumber.hashCode() : 0);
+        result = 31 * result + (patientTelNumber != null ? patientTelNumber.hashCode() : 0);
         result = 31 * result + (patientHeight != null ? patientHeight.hashCode() : 0);
         result = 31 * result + (patientWeight != null ? patientWeight.hashCode() : 0);
         result = 31 * result + (patientAddress != null ? patientAddress.hashCode() : 0);

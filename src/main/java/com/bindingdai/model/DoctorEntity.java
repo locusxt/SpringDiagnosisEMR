@@ -3,7 +3,7 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
 @Table(name = "doctor", schema = "ElectronicHealthRecord", catalog = "")

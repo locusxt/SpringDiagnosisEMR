@@ -143,11 +143,40 @@
         $("#allergy_info").val(allergy);
         $("#add_allergy").modal('hide');
     };
+
+    function update_patient_on_diagnosis(obj)
+    {
+        var name=$(obj).text();
+        var clinicid=$(obj).parent().parent().children("td").eq(1).text();
+        var gender=$(obj).parent().parent().children("td").eq(2).text();
+        var age=$(obj).parent().parent().children("td").eq(3).text();
+        var paytype=$(obj).parent().parent().children("td").eq(4).text();
+        var tab="<table class='table table-bordered table-condensed'>" +
+                "<caption>正在就诊病人</caption>"+"<tr>" +
+                        "<td>"+"姓名"+"</td>"+
+                        "<td>"+"诊疗卡号"+"</td>"+
+                        "<td>"+"性别"+"</td>"+
+                        "<td>"+"年龄"+"</td>"+
+                        "<td>"+"费用类型"+"</td>"+
+                        "</tr>"
+                ;
+        var tab=tab+"<tr>" +
+                        "<td>"+name+"</td>"+
+                        "<td>"+clinicid+"</td>"+
+                        "<td>"+gender+"</td>"+
+                        "<td>"+age+"</td>"+
+                        "<td>"+paytype+"</td>"+
+                        "</tr>"+"</table>"
+                ;
+        $("#patient_on_diagnosis").html(tab);
+    }
+
     function waitinglist_update (obj) {
         var name=$(obj).text();
         var clinicid=$(obj).parent().parent().children("td").eq(1).text();
         var clinicID=parseInt(clinicid);
         console.log(globalpatientinfo);
+        update_patient_on_diagnosis(obj);
 
         for(var i=0;i<globalpatientinfo.length;i++)
         {
@@ -559,28 +588,23 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                <table class="table table-striped table-bordered table-hover table-condensed">
+                <table class="table table-striped table-bordered table-hover table-condensed" id="patient_on_diagnosis">
                     <caption>正在就诊病人</caption>
                     <thead>
                     <tr>
-                        <th>挂单号</th>
-                        <th>门诊号</th>
                         <th>姓名</th>
+                        <th>诊疗卡号</th>
                         <th>性别</th>
                         <th>年龄</th>
                         <th>费用类型</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>100</td>
-                        <td>16012000</td>
-                        <td>张宇</td>
-                        <td>男</td>
-                        <td>11</td>
-                        <td>自费</td>
-                    </tr>
-                    </tbody>
+                    <div id="patient_on_diagnosis_tab">
+                        <tbody>
+
+                        </tbody>
+                    </div>
+
                 </table>
             </div>
         </div>
@@ -1081,6 +1105,20 @@
                                 </button>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="PhysicalExam" class="col-md-2 control-label" >检验检查</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control input-sm" id="InStrumentExam"
+                                       placeholder="...">
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" class=" btn btn-sm btn-primary " onclick="add_InStrumentExam()">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label for="FirstDiagnosis" class="col-md-2 control-label" style="color: orangered" >*初步诊断</label>
                             <div class="col-md-3">

@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import com.bindingdai.model.*;
 import org.springframework.ui.Model;
+import java.util.Date;
+import java.text.*;
 /**
  * Created by daibinding on 15/10/15.
  */
@@ -105,7 +107,7 @@ public class MainController {
                jsonObject.put("clinic_id",patientkey.getPatientClinicId());
                jsonObject.put("paycard_id",patientkey.getPatientPaycardId());
                jsonObject.put("age",patientkey.getPatientAge());
-               jsonObject.put("telnumber",patientkey.getPatientTelnumber());
+               jsonObject.put("telnumber",patientkey.getPatientTelNumber());
                jsonObject.put("gender",patientkey.getPatientGender());
                model.addAttribute("patientKey",jsonObject.toString());
 
@@ -174,7 +176,7 @@ public class MainController {
                 jsonObject.put("clinic_id",patientkey.getPatientClinicId());
                 jsonObject.put("paycard_id",patientkey.getPatientPaycardId());
                 jsonObject.put("age",patientkey.getPatientAge());
-                jsonObject.put("telnumber",patientkey.getPatientTelnumber());
+                jsonObject.put("telnumber",patientkey.getPatientTelNumber());
                 jsonObject.put("gender",patientkey.getPatientGender());
                 if(patientkey.getPatientPaytype()!=null)
                 {
@@ -283,7 +285,7 @@ public class MainController {
     @ResponseBody
     public String Save_Patient_Record(@RequestBody String patientrecord ) throws Exception
     {
-
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         JSONObject jb=new JSONObject(patientrecord);
 
@@ -303,6 +305,7 @@ public class MainController {
         patientRecordEntity.setPatientRecordDiagnosis(diagnosis);
         //patientRecordEntity.setPatientRecord;
         patientRecordEntity.setPatientRecordState(2);
+        patientRecordEntity.setPatientRecordTime(df.format(new Date()));
         patientRecordRepository.saveAndFlush(patientRecordEntity);
 
         System.out.println("finish_save_record");
@@ -400,12 +403,13 @@ public class MainController {
         for(DrugEntity drugEntity:drugEntityList)
         {
             JSONObject jsonObject=new JSONObject();
-            jsonObject.put("id",drugEntity.getIddrug());
-            jsonObject.put("drug_name",drugEntity.getDrugName());
-            jsonObject.put("drug_spec",drugEntity.getDrugSpec());
+            jsonObject.put("id",drugEntity);
+            jsonObject.put("drug_name",drugEntity.getDrugname());
+            jsonObject.put("drug_spec",drugEntity.getDrugspec());
             jsonObject.put("drug_produce_company",drugEntity.getDrugProduceCompany());
             jsonObject.put("drug_per_prize",drugEntity.getDrugPerPrize());
             jsons.put(jsonObject);
+            System.out.println(drugEntity.getDrugname());
         }
         response.getWriter().print(jsons.toString());
     }

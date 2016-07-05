@@ -3,14 +3,14 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/5.
  */
 @Entity
 @Table(name = "drug", schema = "ElectronicHealthRecord", catalog = "")
 public class DrugEntity {
     private int iddrug;
-    private String drugName;
-    private String drugSpec;
+    private String drugname;
+    private String drugspec;
     private String drugProduceCompany;
     private String drugPerPrize;
 
@@ -25,27 +25,27 @@ public class DrugEntity {
     }
 
     @Basic
-    @Column(name = "drug_name", nullable = true, length = 45)
-    public String getDrugName() {
-        return drugName;
+    @Column(name = "drugname", nullable = true, length = 45)
+    public String getDrugname() {
+        return drugname;
     }
 
-    public void setDrugName(String drugName) {
-        this.drugName = drugName;
-    }
-
-    @Basic
-    @Column(name = "drug_spec", nullable = true, length = 45)
-    public String getDrugSpec() {
-        return drugSpec;
-    }
-
-    public void setDrugSpec(String drugSpec) {
-        this.drugSpec = drugSpec;
+    public void setDrugname(String drugname) {
+        this.drugname = drugname;
     }
 
     @Basic
-    @Column(name = "drug_produce_company", nullable = true, length = 45)
+    @Column(name = "drugspec", nullable = true, length = 45)
+    public String getDrugspec() {
+        return drugspec;
+    }
+
+    public void setDrugspec(String drugspec) {
+        this.drugspec = drugspec;
+    }
+
+    @Basic
+    @Column(name = "drugProduceCompany", nullable = true, length = 45)
     public String getDrugProduceCompany() {
         return drugProduceCompany;
     }
@@ -55,7 +55,7 @@ public class DrugEntity {
     }
 
     @Basic
-    @Column(name = "drug_per_prize", nullable = true, length = 45)
+    @Column(name = "drugPerPrize", nullable = true, length = 45)
     public String getDrugPerPrize() {
         return drugPerPrize;
     }
@@ -72,8 +72,8 @@ public class DrugEntity {
         DrugEntity that = (DrugEntity) o;
 
         if (iddrug != that.iddrug) return false;
-        if (drugName != null ? !drugName.equals(that.drugName) : that.drugName != null) return false;
-        if (drugSpec != null ? !drugSpec.equals(that.drugSpec) : that.drugSpec != null) return false;
+        if (drugname != null ? !drugname.equals(that.drugname) : that.drugname != null) return false;
+        if (drugspec != null ? !drugspec.equals(that.drugspec) : that.drugspec != null) return false;
         if (drugProduceCompany != null ? !drugProduceCompany.equals(that.drugProduceCompany) : that.drugProduceCompany != null)
             return false;
         if (drugPerPrize != null ? !drugPerPrize.equals(that.drugPerPrize) : that.drugPerPrize != null) return false;
@@ -84,8 +84,8 @@ public class DrugEntity {
     @Override
     public int hashCode() {
         int result = iddrug;
-        result = 31 * result + (drugName != null ? drugName.hashCode() : 0);
-        result = 31 * result + (drugSpec != null ? drugSpec.hashCode() : 0);
+        result = 31 * result + (drugname != null ? drugname.hashCode() : 0);
+        result = 31 * result + (drugspec != null ? drugspec.hashCode() : 0);
         result = 31 * result + (drugProduceCompany != null ? drugProduceCompany.hashCode() : 0);
         result = 31 * result + (drugPerPrize != null ? drugPerPrize.hashCode() : 0);
         return result;

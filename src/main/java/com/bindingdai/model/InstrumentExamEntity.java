@@ -3,17 +3,17 @@ package com.bindingdai.model;
 import javax.persistence.*;
 
 /**
- * Created by daibinding on 16/6/24.
+ * Created by daibinding on 16/7/4.
  */
 @Entity
-@Table(name = "instrument_exam", schema = "ElectronicHealthRecord", catalog = "")
+@Table(name = "instrumentExam", schema = "ElectronicHealthRecord", catalog = "")
 public class InstrumentExamEntity {
     private int idinstrumentExam;
     private String instrumentExamContent;
     private String instrumentExamValue;
 
     @Id
-    @Column(name = "idinstrument_exam", nullable = false)
+    @Column(name = "idinstrumentExam", nullable = false)
     public int getIdinstrumentExam() {
         return idinstrumentExam;
     }
@@ -23,7 +23,7 @@ public class InstrumentExamEntity {
     }
 
     @Basic
-    @Column(name = "instrument_examContent", nullable = true, length = 45)
+    @Column(name = "instrumentExamContent", nullable = true, length = 45)
     public String getInstrumentExamContent() {
         return instrumentExamContent;
     }
@@ -33,7 +33,7 @@ public class InstrumentExamEntity {
     }
 
     @Basic
-    @Column(name = "instrument_examValue", nullable = true, length = 45)
+    @Column(name = "instrumentExamValue", nullable = true, length = 45)
     public String getInstrumentExamValue() {
         return instrumentExamValue;
     }

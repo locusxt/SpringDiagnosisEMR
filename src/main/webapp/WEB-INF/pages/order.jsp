@@ -83,7 +83,7 @@
                     ;
             $.each(patients,function(id, item){
                 //如果包含则为table赋值
-                if(item.name.indexOf(search_text)!=-1){
+                if(item.drug_name.indexOf(search_text)!=-1){
                     tab+="<tr align='center' ><td> <button class='btn btn-sm btn-link' onclick='patientinfo_update(this)'>" +
                             ""+item.name+"" + "</button> </td>" +
                             "<td>" +item.gender+"</td>" +
@@ -175,7 +175,7 @@
                 "<td><button type='button'  style='background-color: #5bc0de' class='btn  btn-sm form-control flat' onclick='deleteDrug(this)' ><span class='glyphicon glyphicon-trash'></button> "+"</td>" +       //操作
                 "</tr>";
         $("#drug_use ").append(result);
-        console.log(result);
+        //console.log(result);
         $("#drug_use tr:last ").children("td").eq(1).children("input").val(name);
         $("#drug_use tr:last ").children("td").eq(0).children("input").val(i);
         i++;
@@ -254,6 +254,7 @@
         }
 
     };
+    //页面加载
     $(document).ready(function () {
         $('.dropdown-toggle').dropdown();
         if(order_data)
@@ -273,7 +274,8 @@
             success:function(data){
                 drug = JSON.parse(data);
                 //console.log(data_json);
-                console.log(drug);
+                //console.log(drug);
+
 
             }
         });
